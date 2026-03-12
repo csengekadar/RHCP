@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>RHCP - Tudjunk meg többet az alter bandáról</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#0d0d0d,#3b0000);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:70px;
+    background:black;
+}
+
+header h1{
+    font-size:60px;
+    color:#ff2b2b;
+}
+
+nav{
+    background:#1a1a1a;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff2b2b;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:40px;
+}
+
+section{
+    margin-bottom:70px;
+}
+
+.bandimg{
+    width:320px;
+    border-radius:10px;
+    box-shadow:0 0 20px red;
+}
+
+.button{
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    margin:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.red{background:#ff2b2b;color:white;}
+.blue{background:#2b7cff;color:white;}
+.green{background:#00aa55;color:white;}
+.yellow{background:#ffaa00;color:black;}
+
+.button:hover{
+    transform:scale(1.1);
+}
+
+.grid{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+
+<script>
+function uzenet(){
+    alert("A Red Hot Chili Peppers az egyik legikonikusabb alternatív rock banda!");
+}
+
+function kedvenc(){
+    alert("Lehet hogy a következő kedvenc dalod: Can't Stop 🎵");
+}
+
+function rajongo(){
+    alert("Te is RHCP rajongó vagy! 🔥");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Red Hot Chili Peppers</h1>
+<p>Tudjunk meg többet az alter bandáról</p>
+
+<button class="button red" onclick="uzenet()">Miért híresek?</button>
+<button class="button blue" onclick="kedvenc()">Ajánlj egy dalt</button>
+<button class="button green" onclick="rajongo()">RHCP rajongó vagyok</button>
+
+</header>
+
+<nav>
+<a href="#tortenet">Történet</a>
+<a href="#tagok">Tagok</a>
+<a href="#albumok">Albumok</a>
+<a href="#kepek">Képek</a>
+<a href="#zene">Zene</a>
+</nav>
+
+<div class="container">
+
+<section id="tortenet">
+<h2>A banda története</h2>
+
+<p>
+A <b>Red Hot Chili Peppers</b> 1983-ban alakult Los Angelesben.  
+A zenéjük különleges keveréke a funk, rock, punk és alternatív stílusoknak.
+</p>
+
+<p>
+A zenekar világhírű lett olyan albumokkal mint a Californication vagy a
+Blood Sugar Sex Magik.
+</p>
+
+<button class="button yellow"
+onclick="window.open('https://redhotchilipeppers.com')">
+Hivatalos oldal
+</button>
+
+</section>
+
+<section id="tagok">
+<h2>A banda tagjai</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Anthony Kiedis</h3>
+<p>Énekes és dalszövegíró.</p>
+<button class="button red"
+onclick="window.open('https://hu.wikipedia.org/wiki/Anthony_Kiedis')">
+Több info
+</button>
+</div>
+
+<div class="card">
+<h3>Flea</h3>
+<p>Legendás basszusgitáros.</p>
+<button class="button blue"
+onclick="window.open('https://hu.wikipedia.org/wiki/Flea')">
+Több info
+</button>
+</div>
+
+<div class="card">
+<h3>John Frusciante</h3>
+<p>A banda ikonikus gitárosa.</p>
+<button class="button green"
+onclick="window.open('https://hu.wikipedia.org/wiki/John_Frusciante')">
+Több info
+</button>
+</div>
+
+<div class="card">
+<h3>Chad Smith</h3>
+<p>A banda dobosa.</p>
+<button class="button yellow"
+onclick="window.open('https://hu.wikipedia.org/wiki/Chad_Smith')">
+Több info
+</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="albumok">
+
+<h2>Híres albumok</h2>
+
+<ul>
+<li>Blood Sugar Sex Magik</li>
+<li>Californication</li>
+<li>By The Way</li>
+<li>Stadium Arcadium</li>
+<li>Unlimited Love</li>
+</ul>
+
+<button class="button red"
+onclick="window.open('https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5')">
+Spotify
+</button>
+
+<button class="button blue"
+onclick="window.open('https://www.youtube.com/@RedHotChiliPeppers')">
+YouTube
+</button>
+
+</section>
+
+<section id="kepek">
+
+<h2>Képek</h2>
+
+<img class="bandimg"
+src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Red_Hot_Chili_Peppers_2016.jpg">
+
+<img class="bandimg"
+src="https://upload.wikimedia.org/wikipedia/commons/9/9d/RedHotChiliPeppersLive.jpg">
+
+</section>
+
+<section id="zene">
+
+<h2>Hallgass RHCP zenét</h2>
+
+<p>Kattints az alábbi gombra és nézz meg egy koncertvideót.</p>
+
+<button class="button red"
+onclick="window.open('https://www.youtube.com/watch?v=YlUKcNNmywk')">
+Can't Stop videó
+</button>
+
+<button class="button green"
+onclick="window.open('https://www.youtube.com/watch?v=YlUKcNNmywk')">
+Koncert videó
+</button>
+
+</section>
+
+</div>
+
+<footer>
+<p>RHCP rajongói oldal | Alternatív rock forever 🎸</p>
+</footer>
+
+</body>
+</html>
